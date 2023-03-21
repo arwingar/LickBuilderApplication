@@ -1,0 +1,12 @@
+Things to know when running LickBuilder:
+
+Page 1: Simply click the button to start the program.
+		The red 'X' will ask if you're sure before exiting the program.
+		
+Page 2: Selection of Difficulty Level 
+		clicking on the pictures will give you examples of the kinds of rudiments you will see at each difficulty level
+			child forms: clicking on these pictures will not do anything, they are simply visual examples
+			
+		drop down menu to select difficulty level: 
+			'loading' button will appear 
+			clicking 'OK' will open the form that contains the picture boxes of the musical representation of output
