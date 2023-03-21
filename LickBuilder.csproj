@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CBB7960-6B89-4DAC-854B-92C11B5A7D2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LickBuilder</RootNamespace>
+    <AssemblyName>LickBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdvanced.Designer.cs">
+      <DependentUpon>FrmAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdvancedLick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdvancedLick.Designer.cs">
+      <DependentUpon>FrmAdvancedLick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEasy.Designer.cs">
+      <DependentUpon>FrmEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEasyLick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEasyLick.Designer.cs">
+      <DependentUpon>FrmEasyLick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpert.Designer.cs">
+      <DependentUpon>FrmExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpertLick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpertLick.Designer.cs">
+      <DependentUpon>FrmExpertLick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedium.Designer.cs">
+      <DependentUpon>FrmMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMediumLick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMediumLick.Designer.cs">
+      <DependentUpon>FrmMediumLick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LickBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LickBuilder.Designer.cs">
+      <DependentUpon>LickBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GettingStarted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GettingStarted.Designer.cs">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdvanced.resx">
+      <DependentUpon>FrmAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdvancedLick.resx">
+      <DependentUpon>FrmAdvancedLick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEasy.resx">
+      <DependentUpon>FrmEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEasyLick.resx">
+      <DependentUpon>FrmEasyLick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpert.resx">
+      <DependentUpon>FrmExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpertLick.resx">
+      <DependentUpon>FrmExpertLick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedium.resx">
+      <DependentUpon>FrmMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMediumLick.resx">
+      <DependentUpon>FrmMediumLick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LickBuilder.resx">
+      <DependentUpon>LickBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GettingStarted.resx">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lesson 25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swiss army triplet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pataflafla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple bounce roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single drag tap triplet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double stroke roll1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seven stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\six stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam drag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triple paradiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five stroke roll triple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paradiddle diddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eleven stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ten stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single ratamacue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single paradiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag paradiddle 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flamacue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fifteen stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single stroke four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triple stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flammed mill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam paradiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thirteen stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pataflafla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single stroke roll1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single stroke seven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inverted flam tap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double drag tap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double ratamacue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triple ratamacue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag paradiddle 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seven stroke roll triple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seventeen stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double paradiddle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double paradiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam accent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nine stroke roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam tap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flam paradiddle diddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single drag tap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single dragadiddle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
